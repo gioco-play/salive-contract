@@ -44,5 +44,15 @@ interface SALIVEServiceInterface {
      * @return mixed
      */
     function betLogGrabberAll(int $past_minutes);
+
+    /**
+     * @return mixed
+     */
+    function accountToVendor(string $op_code, array $vendor, string $member_code);
+
+    /**
+     * @return mixed
+     */
+    function accountToOperator(string $op_code, array $vendor, string $vendor_account);
 }
 
